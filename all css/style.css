@@ -1,0 +1,605 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+nav{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-right: 90px;
+    margin-left: 90px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: #fff;
+    border-bottom: 1px solid rgba(51, 51, 51, 0.041);
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.02);
+}
+#logo{
+    height: 100px;
+    width: 100px;
+    position: relative;
+}
+#logo img{
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+#btns{
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#btns a{
+    text-decoration: none;
+    color: #000;
+    font-size: 1em;
+    font-family: 'Poppins', sans-serif;
+    transition: .3s ease-in;
+}
+#btns a:hover{
+    text-shadow: 2px 2px 2px  #000 ;
+}
+#links{
+    position: relative;
+    width: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#links i{
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.048);
+    padding: 5px;
+    border-radius: 100%;
+}
+#links #cart:hover,#user:hover{
+    background: rgba(0, 0, 0, 0.164);
+}
+#cart{
+    position: relative;
+}
+#cart::after{
+    content: '';
+    position: absolute;
+    top: -5px;
+    right: -2px;
+    background: #FD7F2C;
+    height: 40%;
+    width: 40%;
+    border-radius: 50%;
+}
+
+#main1{
+    margin-left: 100px;
+    margin-bottom: 30px;
+    width: 84vw;
+    height: 500px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.first a{
+    align-self: flex-start;
+    text-decoration: none;
+    color: #000;
+    background: linear-gradient(#FD7F2C,#FD7F2C);
+    height: 40px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #FD7F2C;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.4);
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.first::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(45deg,#FD7F2C,#FD7F2C);
+    width: 185%;
+    height: 90%;
+    transform: rotate(45deg);
+    z-index: -1;
+}
+#info{
+    display: flex;
+    flex-direction: column;
+}
+#info h1{
+    font-family: 'Poppins', sans-serif;
+}
+#info p{
+    font-family: 'Roboto', sans-serif;
+}
+.price{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#amount{
+    font-size: 1.7em;
+    font-family: 'Fredoka', sans-serif;
+}
+#showcase{
+    margin-top: -50px;
+    position: relative;
+    width: 700%;
+    height: 350px;
+    transform: rotate(-20deg);
+}
+#showcase img{
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+}
+.collection{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    align-items: center;
+    column-gap: 5px;
+    row-gap: 5px;
+    align-items: center;
+    margin-top: 10px;
+    margin-right: 90px;
+    margin-left: 90px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 400px;
+}
+.shoe_card{
+    background: #ffffff;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.4);
+    height: 200px;
+    width: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 20px;
+}
+#shoe{
+    position: relative;
+    width: 200%;
+    height: 200px;
+}
+.shoe_card img{
+    position: absolute;
+    max-width: 100%;
+    height: 100%;
+}
+#shoe_info{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    padding-left: 10px;
+}
+#shoe_info h2{
+    margin-top: -1px;
+    font-family: 'Poppins', sans-serif;
+}
+#shoe_info p{
+    margin-top: -2px;
+    font-family: 'Roboto', sans-serif;
+}
+#rating{
+    margin-top: -20px;
+}
+#fill{
+    color: #ffd700;
+    font-size: 1.3em;
+}
+#price{
+    display: flex;
+    align-items: center;
+    margin-top: -14px;
+}
+.amount{
+    font-size: 1.4em;
+    font-weight: bolder;
+    font-family: 'Fredoka', sans-serif;
+}
+#cut{
+    margin-top: -19px;
+    margin-left: 10px;
+    text-decoration-line: line-through;
+    color: #ffd700;
+}
+#btn_add{
+    margin-top: -15px;
+    align-self: flex-start;
+    text-decoration: none;
+    color: #000;
+    background:rgba(0, 0, 0, 0.109);
+    height: 40px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(0, 0, 0, 0.109);
+    font-family: 'Poppins', sans-serif;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+#btn_add:hover{
+    border: 1px solid rgba(0, 0, 0, 0.404);
+}
+#preview{
+    margin-top: 5px;
+    height: 600px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: 95px;
+    margin-left: 95px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#display{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+    position: relative;
+    height: 300px;
+    width: 770px;
+    margin-left: 250px;
+    margin-top: 40px;
+}
+#display div{
+    align-self: flex-start;
+    max-width: 40%;
+    margin-left: -230px;
+   
+}
+#display img{
+    position: absolute;
+    object-fit: cover;
+    object-position: center;
+    max-width: 70%;
+    max-height: 100%;
+    margin-left: 250px;
+}
+.display_inf0{
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+}
+.display_items{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   width: 100%;
+   padding-top: 20px;
+}
+#item{
+    position: relative;
+    width: 595px;
+    height: 165px;
+    border: 1px solid rgba(0, 0, 0, 0.164);
+    padding-top: 10px;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+#item:hover{
+    transform: scale(1.2);
+}
+#item:not(:last-child){
+    margin-right: 5px;
+}
+#item img{
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+}
+footer{
+    margin-top: 10px;
+    height: 200px;
+    border-top: 1px solid rgba(51, 51, 51, 0.096);
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.02);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.extra_links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 55%;
+}
+.extra_links a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.637);
+    font-family: 'Roboto', sans-serif;
+}
+.extra_links a:hover{
+    text-decoration: underline;
+}
+.social{
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.social img{
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:1025px){
+    body{
+        overflow-x: hidden;
+    }
+    html{
+        font-size: .8em;
+    }
+    #main1{
+        width: 80vw;
+        height: 350px;
+    }
+    #showcase img{
+        position: absolute;
+        max-width: 95%;
+        max-height: 90%;
+    }
+    .collection{
+        height: 400px;
+    }
+    .shoe_card{
+        font-size: .9em;
+        height: 200px;
+        width: 37vw;
+    }
+    #shoe_info h2{
+        margin-top: 15px;
+    }
+    #shoe_info p{
+        margin-top: 12px;
+        font-family: 'Roboto', sans-serif;
+    }
+    #rating{
+        margin-top: -20px;
+    }
+    #cut{
+        margin-top: 2px;
+    }
+    #display{
+        height: 300px;
+        width: 570px;
+        margin-left: 250px;
+        margin-top: 20px;
+    }
+    #display img{
+        max-width: 70%;
+        max-height: 100%;
+        margin-left: 150px;
+    }
+}
+@media only screen and (max-width:900px){
+    body{
+        overflow-x: hidden;
+    }
+    nav{
+        position: sticky;
+        margin-top: 10px;
+        margin-right: 0px;
+        margin-left: 0px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    #main1{
+        width: 100vw;
+        height: 350px;
+        margin-left: 20px;
+    }
+     #showcase img{
+        position: absolute;
+        margin-top: 25px;
+        max-width: 100%;
+        max-height: 80%;
+    }
+    .collection{
+        height: 400px;
+        width: 100vw;
+    }
+    .shoe_card{
+        font-size: .9em;
+        height: 200px;
+        width: 45vw;
+        margin-left: -90px;
+    }
+    #display img{
+        max-width: 70%;
+        max-height: 100%;
+        margin-left: 70px;
+    }
+    #item{
+        width: 595px;
+        height: 105px;
+    }
+    .social{
+        width: 20%;
+    }
+}
+@media only screen and (max-width:769px){
+    body{
+        overflow-x: hidden;
+    }
+    #main1{
+        width: 97vw;
+        height: 350px;
+        margin-left: 20px;
+    }
+    #display img{
+        max-width: 50%;
+        max-height: 100%;
+        margin-left: 70px;
+    }
+    #shoe{
+        position: relative;
+        width: 220%;
+        height: 200px;
+    }
+}
+@media only screen and (max-width:700px){
+    #showcase img{
+        margin-top: 40px;
+        position: absolute;
+        max-width: 90%;
+        max-height: 100%;
+    }
+    #display img{
+        position: absolute;
+        object-fit: cover;
+        object-position: center;
+        max-width: 45%;
+        max-height: 100%;
+        margin-left: 15px;
+    }
+}
+@media only screen and (max-width:600px){
+     #showcase img{
+        margin-top: 40px;
+        position: absolute;
+        max-width: 90%;
+        max-height: 100%;
+    }
+    .first::after{
+        display: none;
+    }
+    #showcase{
+        width: 500%;
+        height: 350px;
+        transform: rotate(-90deg);
+    }
+    .collection{
+        grid-template-columns: repeat(1,100%);
+        height: 700px;
+    }
+    .shoe_card{
+        font-size: .9em;
+        height: 200px;
+        width: 95vw;
+        margin-left: -90px;
+    }
+    #shoe_info{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 250%;
+    }
+    .shoe_card img{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    #preview{
+        margin-top: 90px;
+        margin-left: -5px;
+    }
+    .social{
+        width: 30%;
+    }
+}
+@media only screen and (max-width:481px){
+    html{
+        font-size: .79em;
+    }
+    #main1{
+        width: 97vw;
+        height: 450px;
+        margin-left: 20px;
+    }
+    #btns{
+        width: 200px;
+    }
+    #links i{
+        font-size: 1em;
+        margin: 5px;
+    }
+    #showcase{
+        margin-top: -50px;
+        margin-left: -95px;
+        position: relative;
+        width: 700%;
+        height: 350px;
+        transform: rotate(90deg);
+    }
+    #showcase img{
+        position: absolute;
+        max-width: 90%;
+        max-height: 90%;
+    }
+    #display img{
+        max-width: 25%;
+    }
+    #item{
+        position: relative;
+        width: 595px;
+        height: 65px;
+    }
+}
+@media only screen and (max-width:400px){
+    #showcase{
+        margin-top: 50px;
+        margin-left: -170px;
+        position: relative;
+        width: 700%;
+        height: 350px;
+        transform: rotate(90deg);
+    }
+    #showcase img{
+        position: absolute;
+        max-width: 60%;
+        max-height: 60%;
+    }
+    #info{
+        width: 50%;
+    }
+    #display img{
+        max-width: 20%;
+    }
+    #item{
+        position: relative;
+        width: 595px;
+        height: 45px;
+    }
+    .social img{
+        height: 15px;
+        width: 15px;
+        cursor: pointer;
+    }
+}
+@media only screen and (max-width:320px){
+    #main1{
+        width: 97vw;
+        height: 550px;
+        margin-left: 20px;
+    }
+    #display img{
+        margin-left: -15px;
+        max-width: 15%;
+    }
+}
